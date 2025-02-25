@@ -1,9 +1,7 @@
-package com.example.springsec.Services;
+package com.example.springsec.auth;
 
 import com.example.springsec.Repositories.UserRepository;
-import com.example.springsec.auth.AuthenticationRequest;
-import com.example.springsec.auth.AuthenticationResponse;
-import com.example.springsec.auth.RegisterRequest;
+import com.example.springsec.config.JwtService;
 import com.example.springsec.user.Role;
 import com.example.springsec.user.User;
 import lombok.RequiredArgsConstructor;
@@ -15,6 +13,7 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 public class AuthenticationService {
+
     private UserRepository repository;
     private final PasswordEncoder passwordEncoder;
     private final JwtService jwtService;
