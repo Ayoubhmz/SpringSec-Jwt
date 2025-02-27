@@ -20,7 +20,7 @@ public class Token {
     @Enumerated(EnumType.STRING)
     private TokenType tokenType;
 
-    private Boolean expired;
+    private boolean expired;
 
     private boolean revoked;
 
